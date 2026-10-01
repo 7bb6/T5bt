@@ -1,0 +1,117 @@
+{
+  "errors": {
+    "noMusicPlaying": "ماكو أغنية مشتغلة هسه.",
+    "notAuthorized": "لازم تصعد للفويس حتى تشغّل الأغاني.",
+    "volumeMax": "🔊 الصوت بالفعل في الحد الأقصى (100%).",
+    "volumeMin": "🔉 الصوت بالفعل في الحد الأدنى (0%).",
+    "musicAlreadyPaused": "⏸ المشغل متوقفة بالفعل.",
+    "musicNotPaused": "▶️ المشغل ليست متوقفة.",
+    "cannotPause": "ما كدرت أوقف الأغنية مؤقتًا.",
+    "cannotResume": "ما كدرت أستأنف الأغنية.",
+    "cannotSkip": "ما كدرت أتخطى الأغنية.",
+    "cannotStop": "ما كدرت أوقف التشغيل.",
+    "cannotIncreaseVolume": "⛔ | غير قادر على زيادة الصوت.",
+    "cannotDecreaseVolume": "⛔ | غير قادر على خفض الصوت.",
+    "invalidSongNumber": "رقم الأغنية مو صحيح، اختار رقم من 2 إلى {max}.",
+    "cannotRemoveSong": "ما كدرت أحذف الأغنية من القائمة.",
+    "unableToDisplayQueue": "ما كدرت أعرض قائمة الأغاني.",
+    "unableToDisplayNowPlaying": "ما كدرت أعرض الأغنية الحالية.",
+    "unableToClearQueue": "ما كدرت أمسح قائمة الأغاني.",
+    "unableToCreateMusicCard": "⛔ حدث خطأ أثناء إنشاء بطاقة المشغل.",
+    "unknownCommand": "هذا الأمر مو موجود، اكتب !مساعدة حتى تشوف الأوامر.",
+    "unknownError": "صار خطأ غير متوقع، جرّب مرة ثانية."
+  },
+  "commands": {
+    "play": {
+      "description": "تشغيل أغنية من YouTube أو منصة مدعومة.",
+      "noQuery": "اكتب اسم الأغنية أو رابطها ويا الأمر.",
+      "requestReceived": "لحظة، دا أجهزلك الأغنية."
+    },
+    "pause": {
+      "description": "إيقاف المشغل قيد التشغيل حاليًا.",
+      "paused": "أخذ راحتك، وقفت الأغنية مؤقتًا.",
+      "alreadyPaused": "الأغنية أصلًا واگفة."
+    },
+    "resume": {
+      "description": "استئناف الأغنية الواگفة.",
+      "resumed": "تبشر، رجعت الأغنية تشتغل.",
+      "notPaused": "الأغنية مو واگفة حتى أستأنفها."
+    },
+    "skip": {
+      "description": "تخطي المشغل قيد التشغيل حاليًا.",
+      "skipped": "تخطّيتها يروحي.",
+      "notEnoughSongs": "ماكو أغنية ثانية بالقائمة حتى أتخطاها."
+    },
+    "stop": {
+      "description": "إيقاف المشغل ومسح قائمة الانتظار.",
+      "stopped": "تدلل، وكفت التشغيل ومسحت القائمة."
+    },
+    "volumeUp": {
+      "description": "زيادة الصوت بنسبة 10%.",
+      "increased": "🔊 تم زيادة الصوت إلى {volume}%."
+    },
+    "volumeDown": {
+      "description": "خفض الصوت بنسبة 10%.",
+      "decreased": "🔉 تم خفض الصوت إلى {volume}%."
+    },
+    "repeat": {
+      "description": "تبديل وضع التكرار.",
+      "repeatOff": "وكفت التكرار يروحي.",
+      "repeatSong": "راح أكررلك الأغنية يروحي.",
+      "repeatQueue": "راح أكرر قائمة الأغاني كلها."
+    },
+    "queue": {
+      "description": "عرض قائمة الانتظار الموسيقية الحالية.",
+      "currentQueue": "قائمة الأغاني الحضرتك مشغلهن",
+      "nowPlaying": "هسه تشتغل:"
+    },
+    "nowplaying": {
+      "description": "عرض المشغل الحالية قيد التشغيل.",
+      "nowPlaying": "🔊 الآن يتم تشغيل",
+      "title": "العنوان",
+      "author": "المؤلف",
+      "duration": "المدة",
+      "progress": "التقدم",
+      "volume": "الصوت",
+      "loop": "التكرار",
+      "progressPercentage": "نسبة التقدم",
+      "requestedBy": "تم الطلب بواسطة"
+    },
+    "clear": {
+      "description": "مسح قائمة الانتظار الموسيقية وإيقاف المشغل.",
+      "cleared": "مسحتلك القائمة ووكفت التشغيل."
+    },
+    "remove": {
+      "description": "إزالة أغنية محددة من قائمة الانتظار.",
+      "removed": "شلته من القائمة: `{song}`"
+    },
+    "volume": {
+      "description": "ضبط الصوت من 0 إلى 200.",
+      "current": "الصوت هسه على {volume}%.",
+      "set": "ضبطتلك الصوت على {volume}%.",
+      "invalid": "حدك من 0 للـ 200، لا تبعبص من يمك."
+    }
+  },
+  "events": {
+    "playSong": "دا أشغّل: {song} | طلبها: {user}",
+    "addSong": "ضفت `{song}` - `{duration}` للقائمة، طلبها {user}",
+    "addList": "ضفت قائمة `{playlist}` ({count} أغنية) للقائمة\nالصوت: `{volume}%` | التكرار: `{loop}`",
+    "empty": "الفويس فارغ، راح أطلع منه.",
+    "finish": "خلصت قائمة الأغاني.",
+    "error": "⛔ حدث خطأ: {error}",
+    "searchNoResult": "ما لكيت نتائج لـ `{query}`، جرّب شي غيره."
+  },
+  "buttons": {
+    "pause": "⏸ وكّف مؤقت",
+    "resume": "▶️ استأنف",
+    "skip": "⏭ تخطّي",
+    "stop": "⏹ وكّف",
+    "volumeUp": "🔊 علّي الصوت",
+    "volumeDown": "🔉 نزّل الصوت",
+    "repeat": "🔁 تكرار",
+    "open": "🔗 افتح"
+  },
+  "misc": {
+    "unknownError": "⛔ حدث خطأ غير متوقع."
+  }
+}
